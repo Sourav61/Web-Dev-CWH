@@ -1,0 +1,99 @@
+/** Site wide styles **/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/istockphoto-1427221641-1024x1024.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ================================= Site Top Navbar Styles ======================================== */
+
+.top-navbar {
+    background: white;
+}
+
+/* Left Container */
+
+.left-container {
+    display: inline-block;
+}
+
+.left-container .adress {
+    content: "\f279";
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.left-container .contact {
+    display: inline;
+}
+
+/* Right Container */
+
+.right-container {
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+}
+
+.right-container .timings {
+    display: inline-block;
+}
+
+.right-container .lang-dropdown {
+    display: inline-block;
+}
+
+/* ================================= Site Bottom Navbar Styles ======================================== */
+
+/* Site Logo */
+
+.site-logo {
+    border: 2px solid red;
+    display: inline-block;
+    left: 34px;
+    top: 20px;
+    position: absolute;
+    text-align: center;
+}
+
+/* Site Navbar */
+
+.nav-items-list {
+    border: 2px solid green;
+    display: block;
+    width: 33%;
+    margin: 20px auto;
+    list-style: none;
+}
+
+.nav-items-list li {
+    display: inline-block;
+}
+
+.nav-items-list li a {
+    text-decoration: none;
+    color:tomato;
+    padding: 34px 23px;
+}
+
+.nav-items-list li a:hover,
+.nav-items-list li a.active {
+    cursor: pointer;
+    color:darkslateblue;
+    text-decoration: underline;
+}
+
+/* Site Controls */
+
+.site-controls {
+    border: 2px solid purple;
+    position: absolute;
+    display: inline-block;
+    right: 34px;
+    top: 20px;
+}

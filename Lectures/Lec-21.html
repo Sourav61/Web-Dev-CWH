@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+
+        }
+
+        body {
+            
+        }
+
+        .container {
+            border: 3px solid red;
+            width: 900px;
+            margin: auto;
+        }
+
+        .item {
+            background-color: lightgreen;
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 3px solid purple;
+        }
+
+        .para {
+
+        }
+
+        #fruit {
+            float: left;
+            width: 12%;
+        }
+
+        #computer {
+
+        }
+
+        #stationary {
+            
+        }
+
+        .container {
+    background-color: lightgray;
+}
+.float-element {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    clear: both;
+}
+
+.container::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sed, delectus nisi animi velit sit, dicta architecto tempora porro, rem debitis? Facilis molestias laboriosam omnis. Velit qui, consequatur doloribus minima culpa placeat perferendis eligendi amet.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sed, delectus nisi animi velit sit, dicta architecto tempora porro, rem debitis? Facilis molestias laboriosam omnis. Velit qui, consequatur doloribus minima culpa placeat perferendis eligendi amet.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sed, delectus nisi animi velit sit, dicta architecto tempora porro, rem debitis? Facilis molestias laboriosam omnis. Velit qui, consequatur doloribus minima culpa placeat perferendis eligendi amet.</p>
+        </div>
+    </div>
+
+</body>
+</html>
