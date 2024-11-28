@@ -3,15 +3,19 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('../img/istockphoto-1427221641-1024x1024.jpg');
+    background: url('../img/fitness-3448864_1280.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: #b50909fc;
 }
 
 /* ================================= Site Top Navbar Styles ======================================== */
 
 .top-navbar {
-    background: white;
+    padding: 10px;
+    color: #261414fc;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 /* Left Container */
@@ -53,18 +57,27 @@ body {
 /* Site Logo */
 
 .site-logo {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: inline-block;
     left: 34px;
-    top: 20px;
+    top: 40px;
     position: absolute;
     text-align: center;
+}
+
+.site-logo .site-title {
+    display: inline;
+    color: white;
+    font-size: 34px;
+    top: 30px;
+    position: absolute;
+    left: 130px;
 }
 
 /* Site Navbar */
 
 .nav-items-list {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: block;
     width: 33%;
     margin: 20px auto;
@@ -77,8 +90,11 @@ body {
 
 .nav-items-list li a {
     text-decoration: none;
-    color:tomato;
-    padding: 34px 23px;
+    margin: 34px 23px;
+    text-decoration: none;
+    color: #b50909fc;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .nav-items-list li a:hover,
@@ -91,9 +107,58 @@ body {
 /* Site Controls */
 
 .site-controls {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     position: absolute;
     display: inline-block;
     right: 34px;
-    top: 20px;
+    top: 55px;
+    width: 300px;
+}
+
+.site-controls button {
+    appearance: none;
+    background: transparent;
+    border: 1px solid white;
+    width: calc(50% - 10px);
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+/* Site's main content */
+
+/* Form Styles */
+
+.form-container {
+    margin: 60px 30px;
+    border: 3px solid white;
+    border-radius: 6px;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container .form-heading {
+    color: white;
+}
+
+.form-container .form-group input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.form-container input[type="submit"] {
+    appearance: none;
+    background: transparent;
+    border: 1px solid white;
+    width: 85%;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 700;
 }
