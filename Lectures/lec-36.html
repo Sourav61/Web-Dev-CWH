@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .container {
+            background-color: greenyellow;
+            top: 100px;
+            height: 200px;
+            width: 100%;
+        }
+
+        .box, .box1 {
+            background: green;
+            height: 200px;
+            width: 200px;
+            /* position: relative; */
+            position: absolute;
+            /* animation-name: Sourav1; */
+            /* animation-name: sp-cube; */
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            /* animation-fill-mode: backwards; */
+            /* animation-direction: alternate-reverse; */
+        }
+        
+        .box1 {
+            background: purple;
+            position: absolute;
+            top: 100px;
+            animation-timing-function: ease-out;
+        }
+
+        /* @keyframes Sourav1 {
+            from {
+                width: 200px;
+                top: 100px;
+            }
+
+            to {
+                width: 100%;
+                top: 200px;
+            }
+        } */
+
+        @keyframes sp-cube {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                top: 250px;
+                left: 0;
+                background: yellow;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+                background: green;
+            }
+
+            100% {
+                top: 0;
+                left: 250px;
+                background: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+        <!-- <div class="box1">
+            This is a box
+        </div> -->
+    </div>
+</body>
+</html>

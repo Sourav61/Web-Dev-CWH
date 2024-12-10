@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        div li p {
+            color: blue;
+            background-color: aqua;
+        }
+        
+        div > p {
+            color: blueviolet;
+            background-color: chartreuse;
+        }
+
+        div + p {
+            color: brown;
+            /* background-color: azure; */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is main heading</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is p inside li</p></li>
+                <li>This is a list item</li>
+                <p>This is p inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>
